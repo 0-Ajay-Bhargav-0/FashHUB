@@ -39,7 +39,7 @@
             <a href="/"><img src="{% static 'images/Logo.png' %}" alt="FashHUB" /></a>
           </div>
           <div class="nav-main">
-            <ul class="drop">
+            <!-- <ul class="drop"> -->
               <!-- {% if request.user.is_authenticated %}
                 <li><p style="color: blanchedalmond;">Hey {{request.user.username}}!!</p></li>
 
@@ -60,11 +60,11 @@
                 </div>
                 
               </li> -->
-              <li><a href="/showWishlist/" class="tab"><i class="fas fa-bookmark"></i></a>
+              <!-- <li><a href="/showWishlist/" class="tab"><i class="fas fa-bookmark"></i></a>
             </li>
             <li><a href="/cart/" class="tab"><i class="fas fa-shopping-bag"></i></a>
             </li>
-            </ul>
+            </ul> -->
           </div>
           </div>
         </div>
@@ -213,7 +213,7 @@
           <small>Error message</small>
         </div>
         <button type="submit"><a style="color: #fff; text-decoration: none;">Submit</a></button>
-        <p><a href="accounts/login/" class="log">Already Registered?</a></p>
+        <p><a href="/accounts/login/" class="log">Already Registered?</a></p>
       </div>
       
       </form>

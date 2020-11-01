@@ -15,14 +15,14 @@ def register(request):
         password1 = request.POST['password1']
         password2 = request.POST['password2']
 
-        user = User.objects.create(username=username,email=email,password=password1)
+        user = User.objects.create_user(username=username,email=email,password=password1)
         user.save()
         profile = Profile.objects.get(user=user)
         profile.phone_number=phone_number
         profile.birth_date=birth_date
         profile.save()
         print("user created")
-        return redirect('')
+        return redirect('/accounts/login')
     return render(request,'register.html')
 
 def login(request):
