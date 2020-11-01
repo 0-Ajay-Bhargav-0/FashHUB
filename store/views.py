@@ -62,6 +62,9 @@ def journal_page(request,id):
     }
     return render(request,'journal-page.html',context=context)
 
+def aboutus(request):
+    return render(request,'aboutus.html')
+
 # def products(request):
 #     products = Product.objects.all()
     

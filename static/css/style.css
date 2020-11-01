@@ -35,11 +35,11 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  /* position: fixed; */
 }
 
 #navbar-2 {
-  background-color: #4b718c;
+  /* background-color: #b0d4ec; */
+  background-color: #ddd;
   height: 40px;
   border-bottom: solid 2px #0b2433;
 }
@@ -68,8 +68,7 @@ a {
 }
 
 .nav-links ul li a {
-  /* color: #b0d4ec; */
-  color: #0b2433;
+  color: var(--nav-color);
   font-size: 1.1rem;
 }
 
@@ -108,9 +107,101 @@ a {
   margin: 400px;
 }
 
+.sc img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sc{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+#shop_category{
+  padding-top: 5%;
+}
+#shop_collection{
+  padding-top: 5%;
+}
+
+.sc h3{
+  padding-bottom: 5%;
+  font-family: 'Special Elite', cursive; text-decoration: underline;
+}
+
+.sc img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.sc:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.carousel{
+  width: 100%;
+  margin: 20px auto;
+  color: #000;
+  text-align: center;
+}
+
+.container .carousel-item h2,.container .carousel-item p{
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}
+
+.container .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.container .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
 #navigation-carousel .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 #navigation-carousel .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.clb,.eve{
+  height: 200px;
+  box-shadow: 5px;
+}
+.clb h2{
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  justify-content: center;
+}
+
+.eve h4{
+  text-align: center;
+  padding-bottom: 5%;
+  font-family: 'Special Elite', cursive; 
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+}
+
+.clb input{
+  margin-top: 1%;
+  width: 50%;
+}
+.clb button{
+  margin-top: 1%;
+  width: 50%;
+}
+
+.clb form{
+  margin-left: 33%;
+}
+
+.eve button{
+  margin-top: 15%;
+  margin-left: 30%;
 }

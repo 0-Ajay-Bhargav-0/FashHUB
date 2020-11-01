@@ -34,6 +34,7 @@ urlpatterns = [
     path('removeWishlist/<int:id>',views.removeWishlist,name='removeWishlist'),
     path('donation/',views.donation,name='donation'),
     path('products/<str:gender>/<str:category>',views.genderCategory,name='genderCategory'),
+    path('aboutus/',views.aboutus,name='aboutus'),
     # path('<str:gender>/<str:category>',views.,name='menbottom'),
     # path('<str:gender>/<str:category>',views.,name='menfootware'),
     # path('<str:gender>/<str:category>',views.,name='menaccessories'),
